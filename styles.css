@@ -35,6 +35,13 @@ header {
     font-weight: bold;
 }
 
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff; /* Restaurant theme color */
+}
+
 .hero {
     background: url('restaurant-background.jpg') no-repeat center center/cover;
     color: #fff;
@@ -65,18 +72,50 @@ section {
     text-align: center;
 }
 
-.menu-items {
-    display: flex;
-    justify-content: space-around;
+/* General Menu Section Styling */
+.menu {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #b82e1f; /* Restaurant theme color */
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #b82e1f;
+    border-bottom: 2px solid #b82e1f;
+    padding-bottom: 0.5rem;
     margin-top: 2rem;
 }
 
-.menu-items .item {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 10px;
-    width: 45%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.menu-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-section ul li {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-section ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-section ul li:hover {
+    background-color: #f7f7f7;
 }
 
 footer {
